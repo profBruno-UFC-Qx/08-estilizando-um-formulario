@@ -8,24 +8,28 @@
 </head>
 <body>
   <main>
-    <h1>Lista de compras</h1>
-    <ul>
-      <li>
-        <h2>Produto 1</h2>
-        <p>Descrição do produto 1.</p>
-        <p class="price">R$10.00</p>
-      </li>
-      <li>
-        <h2>Produto 2</h2>
-        <p>Descrição do produto 2.</p>
-        <p class="price">R$20.00</p>
-      </li>
-      <li>
-        <h2>Produto 3</h2>
-        <p>Descrição do produto 3.</p>
-        <p class="price">R$30.00</p>
-      </li>
-    </ul>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </main>
   <script src="js/script.js"></script>
 </body>
