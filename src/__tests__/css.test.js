@@ -39,16 +39,9 @@ test('Todos as labels devem possuir fonte de tamanho igual 1.1em', () => {
   const label4 = screen.getByText("Message:");
   style =  window.getComputedStyle(label4);
   expect(style.fontSize).toBe('1.1em');
-
-
-  // const list = screen.getAllByRole("label");
-  // for (let item of list) {
-  //   const styles =  window.getComputedStyle(item);
-  //   expect(styles.fontSize).toBe('1.1em');
-  // }
 })
 
-test('Todos os elementos elementos de entrada, incluindo o textarea, devem ter o plano de fundo na cor *#f4f4f4*', () => {
+test('Todos os elementos elementos de entrada, incluindo o textarea, devem ter o plano de fundo na cor #f4f4f4', () => {
   const list = screen.getAllByRole("textbox");
   for (let item of list) {
     const styles =  window.getComputedStyle(item);
@@ -80,32 +73,5 @@ test('Todos as divs devem possuir margem inferior de 10px', () => {
   }
 })
 
-// test('Todos os paragrafos devem ter texto com a cor #323334', () => {
-//   const produto1 = screen.getByText("Descrição do produto 1.");
-//   let style =  window.getComputedStyle(produto1);
-//   expect(style.color).toBe('rgb(50, 51, 52)');
 
-//   const produto2 = screen.getByText("Descrição do produto 2.");
-//   style =  window.getComputedStyle(produto2);
-//   expect(style.color).toBe('rgb(50, 51, 52)');
-
-//   const produto3 = screen.getByText("Descrição do produto 3.");
-//   style =  window.getComputedStyle(produto3);
-//   expect(style.color).toBe('rgb(50, 51, 52)');
-// })
-
-
-// test('Todos os elementos p.price devem ter o font-weight igual a bold', () => {
-//   const produto1 = screen.getByText("R$10.00");
-//   let style =  window.getComputedStyle(produto1);
-//   expect(style.fontWeight).toBe('bold');
-
-//   const produto2 = screen.getByText("R$20.00");
-//   style =  window.getComputedStyle(produto2);
-//   expect(style.fontWeight).toBe('bold');
-
-//   const produto3 = screen.getByText("R$30.00");
-//   style =  window.getComputedStyle(produto3);
-//   expect(style.fontWeight).toBe('bold');
-// })
 
